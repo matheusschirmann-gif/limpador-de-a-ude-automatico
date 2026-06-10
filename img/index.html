@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <div class="container">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>Produção Eficiente e Respeito ao Meio Ambiente</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>O Equilíbrio no Campo</h2>
+            <p>O futuro da agricultura depende da nossa capacidade de produzir mais alimentos utilizando menos recursos naturais. Conheça os pilares dessa revolução verde:</p>
+        </section>
+
+        <section class="grid-cards">
+            <div class="card" onclick="mostrarDetalhes('producao')">
+                <h3>Produção Alta</h3>
+                <p>Tecnologia e biotecnologia aumentando a produtividade por hectare.</p>
+                <span class="saiba-mais">Clique para saber mais</span>
+            </div>
+            <div class="card" onclick="mostrarDetalhes('meio-ambiente')">
+                <h3>Meio Ambiente</h3>
+                <p>Preservação de frentes de água, rotação de culturas e créditos de carbono.</p>
+                <span class="saiba-mais">Clique para saber mais</span>
+            </div>
+            <div class="card" onclick="mostrarDetalhes('tecnologia')">
+                <h3>Tecnologia</h3>
+                <p>Drones, sensores IoT e inteligência artificial gerando desperdício zero.</p>
+                <span class="saiba-mais">Clique para saber mais</span>
+            </div>
+        </section>
+
+        <section id="painel-info" class="painel escondido">
+            <h4 id="painel-titulo"></h4>
+            <p id="painel-texto"></p>
+            <button onclick="fecharPainel()">Fechar</button>
+        </section>
+
+        <section class="simulador">
+            <h2>Simulador de Impacto AgroTech</h2>
+            <p>Escolha uma prática sustentável para ver o impacto estimado na produção e na natureza:</p>
+            
+            <div class="botoes-simulador">
+                <button onclick="simular('drone')">Uso de Drones</button>
+                <button onclick="simular('rotacao')">Rotação de Culturas</button>
+                <button onclick="simular('gotejamento')">Irrigação por Gotejamento</button>
+            </div>
+
+            <div id="resultado-simulador" class="resultado-box">
+                <p><em>Selecione uma tecnologia acima para calcular o impacto.</em></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Agro Forte, Futuro Sustentável. Projeto Open Source.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
