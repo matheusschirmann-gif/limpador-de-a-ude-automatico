@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agro Forte, Futuro Sustentável</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos básicos para visualização rápida */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero {
+            background-color: #e8f5e9;
+        }
+        .pilares {
+            background-color: #c8e6c9;
+        }
+        .simulador {
+            background-color: #a5d6a7;
+        }
+    </style>
 </head>
 <body>
 
@@ -21,7 +64,38 @@
         </div>
     </header>
 
+    <!-- Seção Início -->
     <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h2>Produção Eficiente, Planeta Vivo</h2>
-            <p>O futuro da agricultura está na união entre a alta produtividade e a preservação ambiental
+        <h2>Produção Eficiente, Planeta Vivo</h2>
+        <p>O futuro da agricultura está na união entre alta produtividade e preservação ambiental.</p>
+    </section>
+
+    <!-- Seção Pilares -->
+    <section id="pilares" class="pilares">
+        <h2>Nossos Pilares</h2>
+        <ul>
+            <li>Inovação tecnológica</li>
+            <li>Sustentabilidade ambiental</li>
+            <li>Valorização do produtor rural</li>
+            <li>Segurança alimentar</li>
+        </ul>
+    </section>
+
+    <!-- Seção Simulador -->
+    <section id="simulador" class="simulador">
+        <h2>Simulador</h2>
+        <p>Em breve você poderá calcular o impacto de suas práticas agrícolas no meio ambiente.</p>
+        <!-- Exemplo de formulário simples -->
+        <form>
+            <label for="area">Área cultivada (ha):</label>
+            <input type="number" id="area" name="area"><br><br>
+
+            <label for="produtividade">Produtividade esperada (t/ha):</label>
+            <input type="number" id="produtividade" name="produtividade"><br><br>
+
+            <button type="submit">Calcular</button>
+        </form>
+    </section>
+
+</body>
+</html>
